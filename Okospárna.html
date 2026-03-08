@@ -4,82 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="bootstrap/js/jquery.min.js"></script>
-  <script src="bootstrap/js/popper.min.js"></script>
-  <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="bootstrap/js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="Bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="Okospárna.css">
-    <title>Az intelligens és alvás figyelő párna</title>
+    <title>A DreamSmartX</title>
 </head>
 <body>
 
-  <!--Képlapozó sáv-->
-<div class="container-fluid" id="kepek">
-  <div id="demo" class="carousel slide" data-ride="carousel">
-    
-    <ul class="carousel-indicators">
-      <li data-target="#demo" data-slide-to="0" class="active"></li>
-      <li data-target="#demo" data-slide-to="1"></li>
-      <li data-target="#demo" data-slide-to="2"></li>
-    </ul>      
-    
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="képek/képlapozó1.webp" alt="okospárna használatközben" title="okospárna használatközben">
-      </div>
-      <div class="carousel-item">
-        <img src="képek/képlapozó2.jpg" alt="okospárna használatközben" title="okospárna használatközben">
-      </div>
-    </div>      
-    
-    <a class="carousel-control-prev" href="#demo" data-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-    </a>
-    <a class="carousel-control-next" href="#demo" data-slide="next">
-      <span class="carousel-control-next-icon"></span>
-    </a>
-  </div>
-  <h1 class="d-none d-md-block">Okospárna</h1>
-</div>
-
-<nav class="navbar navbar-expand-sm bg-primary navbar-light justify-content-center">
-  <ul class="navbar-nav font-weight-bold">
-    <li class="nav-item">
-        <a class="nav-link text-light" href="#tortenete">Története</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link text-light" href="#az okosparna">Az okospárna</a>
-    </li>
-
-    <li class="nav-item">
-        <a class="nav-link text-light" href="#funkcioi">Funkciói</a>
-    </li>
-    
-    <li class="nav-item">
-        <a class="nav-link text-light" href="#osszehasonlitas">Összehasonlítás</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link text-light" href="#vasarlas">Vásárlás</a>
-    </li>
-    <li>
-        <img class="logo_meret" src="képek/" alt="A logó" title="A logó">
-    </li>
-  </ul>
+<navbar>
+<nav>
+        <div class="menu-sav"><img class="logo logo-area logo-span" src="képek/image-wm.png" alt="">
+            DreamSmartX
+        </div>
+   <ul class="menu">
+       <li> <a href="#tortenet">Története</a> </li> 
+       <li>     <a href="#mi">Termék</a> </li>
+        <li><a href="#funkcio">Funkciói</a>  </li>
+       <li> <a href="#rendeles">Rendelés</a></li>
+    </ul>
 </nav>
+</navbar>
 
-<div class="kereso">
-    <input type="text" placeholder="Keresés...">
-    <button>🔍</button>
-  </div>
 
-  
+<section id="tortenet">
+
+<h2 class="hero-content">A DreamSmartX története</h2>
+
+<p class="story">
+A DreamSmartX ötlete abból született, hogy egyre több ember
+küzd rossz alvással és stresszel. Egy fiatal fejlesztőcsapat
+olyan párnát akart létrehozni, amely figyeli az alvást,
+javítja a testtartást és segít mélyebben pihenni.
+</p>
+
+<p>
+Több év kutatás és fejlesztés után megszületett a DreamSmartX,
+egy intelligens okospárna, amely mesterséges intelligenciát
+használ az alvás optimalizálására.
+</p>
+
+</section>
+
+
+
+<section id="mi">
   <div class="row">
     <div class="py-3 col-lg-6">
       <div class="media p-3 h-100">
         <div class="media-body ismertetok">
-          <h3> Mi az okospárna?</h3>
+          <h3 class="section-title"> Mi az DreamSmartX</h3>
           <img src="képek/okospárna.webp" alt="okospárna" title="okospárna" id="okospárna">
           <p>
-            Az okospárna <i>(smart pillow)</i> olyan technológiailag továbbfejlesztett alvási kiegészítő, amely beépített érzékelőkkel, mikrochipekkel és vezeték nélküli kapcsolatok <i>segítségével</i> monitorozza és javítja az alvás minőségét.Az okospárna ideális azoknak, akik horkolnak, alvászavarokkal küzdenek, vagy szeretnék részletesen elemezni és javítani alvási szokásaikat.Nem véletlenül hívják okos párnának. Ahhoz, hogy teljes legyen az élvezet, először le kell tölteni hozzá egy applikációt.
+            A DreamSmartX <i>(smart pillow)</i> olyan technológiailag továbbfejlesztett alvási kiegészítő, amely beépített érzékelőkkel, mikrochipekkel és vezeték nélküli kapcsolatok <i>segítségével</i> monitorozza és javítja az alvás minőségét.A DreamSmartX ideális azoknak, akik horkolnak, alvászavarokkal küzdenek, vagy szeretnék részletesen elemezni és javítani alvási szokásaikat.Nem véletlenül hívják okos párnának. Ahhoz, hogy teljes legyen az élvezet, először le kell tölteni hozzá egy applikációt.
           </p>
         </div>
       </div>
@@ -97,7 +74,51 @@
     </div>
 
   </div>
+
+</section>
+
+<section id="funkcio">
+
+<h2 class="section-title">Funkciók</h2>
+
+<div class="features">
+
+<div class="card">
+<h3>😴 Alvásfigyelés</h3>
+<p>Figyeli az alvási ciklusokat és részletes statisztikát készít.</p>
+</div>
+
+<div class="card">
+<h3>🌡 Hőmérséklet szabályozás</h3>
+<p>Automatikusan az ideális hőmérsékletre állítja a párnát.</p>
+</div>
+
+<div class="card">
+<h3>🎵 Nyugtató hangok</h3>
+<p>Beépített hangszóró segít gyorsabban elaludni.</p>
+</div>
+
+<div class="card">
+<h3>📱 Mobil alkalmazás</h3>
+<p>Teljes alvásanalitika és személyre szabott tanácsok.</p>
+</div>
+
+</div>
+
+</section>
   
+<section id="rendeles">
+<div class="order">
+<h2>Rendeld meg most!</h2>
+<p>Tapasztald meg a pihentető alvás új generációját.</p>
+<button>Rendelés</button>
+</div>
+</section>
+
+<footer>
+<p>© 2026 DreamSmartX – A jövő alvása</p>
+</footer>
+
 
 
 </body>
