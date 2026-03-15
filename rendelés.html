@@ -4,20 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="Okospárna.css">
+    <link rel="stylesheet" href="rendeles.css">
+    <script defer src="okosparna.js"></script>
     <title>DreamSmartX Rendelés</title>
 </head>
 <body>
-    <navbar>
-<nav>
-        <div class="menu-sav"><img class="logo logo-area logo-span" src="képek/image-wm.png" alt="">
-            DreamSmartX
+
+<header class="navbar">
+
+        <div class="logo">
+            <img src="képek/logo.png" alt="">
+            <span>DreamSmartX</span>
         </div>
-   <ul class="menu">
-       <li> <a href="Okospárna.html">Főoldal</a> </li> 
-    </ul>
-</nav>
-</navbar>
+
+<div class="menu-btn" id="menuBtn">☰</div>
+
+</header>
+
+<div class="menu-bar" id="navMenu">
+
+    <nav class="nav-links">
+         <a href="Okospárna.html">Főoldal</a> 
+    </nav>
+</div>
+
+
 <h3 id="rendelesfocim">Rendelés</h3>
 <div class="container">
     <form id="urlap">
@@ -67,10 +78,26 @@
 
         <div class="urlapreszek">
             <h4>Fizetés módja</h4>
-            <input type="radio">Átutalás
-            <input type="radio">Utánvét
-            <input type="radio">PayPal
+            <label style="display: flex; gap: -1000px;">
+                <span>Utalás</span>
+            <input style="margin-left: -588px;" type="checkbox" class="csakegy">
+            </label>
+            <label style="display: flex; gap: -1000px;">
+                <span>Utánvét</span>
+            <input style="margin-left: -600px;" type="checkbox" class="csakegy">
+            </label>
+            <label style="display: flex; gap: 60px;">
+                <span>Paypal</span>
+            <input style="margin-left: -652px;" type="checkbox" class="csakegy">
+            </label>
         </div>
+
+
+        <div class="urlapreszek">
+            <label>Megjegyzés</label>
+            <input type="text">
+        </div>
+
 
         <button type="submit" id="bekuldes">Rendelés elküldése</button>
 </div>
